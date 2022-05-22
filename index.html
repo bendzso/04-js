@@ -5,14 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Hamburgerező</title>
+    <title>Szótár</title>
 </head>
 <body>
 
     <div class="container">
         <div class="row">
-            <div class="col-4">–</div>
-            <div class="col-8">–</div>
+            <div class="col-2"></div>
+            <div class="col-8">
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Parancs</th>
+                            <th>Funkció</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>let</td>
+                            <td>Változó deklaráció. Ha az változó neve után van = akkor definíció.</td>
+                        </tr>
+                        <tr>
+                            <td>const</td>
+                            <td>Olyan változó létrehozása, ami később nem vehet fel más értéket. Nem lehet csak deklarálni, mindenképp definiálni szükséges.</td>
+                        </tr>
+                        <tr>
+                            <td>A változó nevének szabályai</td>
+                            <td>Nem kezdődhet számmal és speciális karakterrel. Nem lehet benne szóköz –> sneak_case vagy camelCase elnevezés javasolt.</td>
+                        </tr>
+                        <tr>
+                            <td>A változók típusai</td>
+                            <td>Szám [number] • Szöveg [string] • Logikai érték [boolean] • Definiálatlan [undefinied] • Érték nélküli [null] </td>
+                        </tr>
+                        <tr>
+                            <td>typeof</td>
+                            <td>Kiírja a változó típusát.</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>5 % 2 = 1. Modulus. Megmondja, mennyi a maradék egy osztás után. Kideríthető vele, hogy a változó értéke páros vagy páratlan.</td>
+                        </tr>
+                        <tr>
+                            <td>**</td>
+                            <td>3 ** 3 = 27. Hatványozás.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].lenght</td>
+                            <td>Kiadja a string változó hosszát.</td>
+                        </tr>
+                        <tr>
+                            <td>[***] + [***]</td>
+                            <td>Stringek összefűzésére is alkalmas a + jel.</td>
+                        </tr>
+                        <tr>
+                            <td>Változó típuskonverziók</td>
+                            <td>Implicit –> let userAge = Number(42); Automatikus. Tipikus hiba + esetén. Explicit –> Vezérelt. A változó létrehozásakor rögzíthetjük, hogy milyen típus legyen a bele került érték. String() • Number() • Null() • Undefined().</td>
+                        </tr>
+                        <tr>
+                            <td>[***].toFixed(x)</td>
+                            <td>A változó értékének tizedes jegyeit kerekítve vágja le a megadott "x" számra.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].toPrecision(x)</td>
+                            <td>A változót összesen "x" karakterszámra vágja, kerekítve.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-2"></div>
         </div>
     </div>
 
