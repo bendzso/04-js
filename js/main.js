@@ -1,0 +1,1 @@
+console.log("Helló, itt egy konzol üzenet.");
