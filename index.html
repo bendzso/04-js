@@ -9,10 +9,29 @@
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">javascript</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">szótár</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="urlap.html">űrlap</a>
+              </li>
+
+          </div>
+        </div>
+      </nav>
+
     <div class="container">
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
+            <div class="col-1"></div>
+            <div class="col-10">
                 <table class="table table-hover table-striped">
                     <thead>
                         <tr>
@@ -69,10 +88,70 @@
                             <td>[***].toPrecision(x)</td>
                             <td>A változót összesen "x" karakterszámra vágja, kerekítve.</td>
                         </tr>
+                        <tr>
+                            <td>parseFloat(x)<br>parseInt(x)</td>
+                            <td>Az "x" stringből készít szám típust. Előbbi tizedes tört, utóbbi egész számot készít. </td>
+                        </tr>
+                        <tr>
+                            <td>document.querySelector("input[name='***']")</td>
+                            <td>Kiválasztja az adott HTML elemet. Jelen esetben egy *** nevű input mezőt keres. Működik csak név kereséssel is –> document.querySelector("[name='***']")</td>
+                        </tr>
+                        <tr>
+                            <td>[***].value</td>
+                            <td>Megadja a változó értékét.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].innerHTML</td>
+                            <td>Az adott elem tartalma.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].trim</td>
+                            <td>A string változó elött és mögött kiveszi a szóközöket.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].concat(x)</td>
+                            <td>A stringhez hozzáfűzi x változó tartalmát.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].toLowerCase(x)<br>[***].toUpperCase(x)</td>
+                            <td>A stringet átalakítja csupa kis/nagybetűs karakterre.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].indexOf(x)</td>
+                            <td>Megadja, hogy x string hányadik karakterrel kezdődően (0-val kezdve) található meg a változóban. Ha nincs benne, -1 a válasz.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].replace("x", "y")</td>
+                            <td>Kicseréli a változóban x tartalmat y tartalomra.</td>
+                        </tr>
+                        <tr>
+                            <td>Boolean</td>
+                            <td>Igaz / Hamis. Van / Nincs. 1 / 0 .Érték vizsgálat –> "==" . Logikai operátorok működnek –> "< > >= <=" stb. A === értéket és típust is vizsgál. Tagadás –> "!=". ÉS kapcsolat –> "&&". VAGY kapcsolat –> "||"</td>
+                        </tr>
+                        <tr>
+                            <td>if ... else </td>
+                            <td>Igaz hamis állításokkal lehet a programkódot irányítani az eredmény alapján. if (feltétel) {parancs} else {parancs}</td>
+                        </tr>
+                        <tr>
+                            <td>if rövidítve</td>
+                            <td>[***] = feltétel ? ha igaz : ha nem igaz;</td>
+                        </tr>
+                        <tr>
+                            <td>Invokáció</td>
+                            <td>A függvény indítása, futtatása. "Meghívom a függvényt"</td>
+                        </tr>
+                        <tr>
+                            <td>Eljárás / Függvény</td>
+                            <td>Az eljárás nem ad vissza adatot, a függvény igen (return). Formailag egyformák.</td>
+                        </tr>
+                        <tr>
+                            <td>var | let | const</td>
+                            <td>A var kilát a függvényből és meg tudja változtatni a globális változót, de új is definiálható. A let blokk szinten működik, ugyan úgy.</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="col-2"></div>
+            <div class="col-1"></div>
         </div>
     </div>
 
