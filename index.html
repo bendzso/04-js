@@ -18,7 +18,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">szótár</a>
+                <a class="nav-link active" aria-current="page" href="index.html">jegyzetek</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="urlap.html">űrlap</a>
@@ -148,6 +148,86 @@
                             <td>var | let | const</td>
                             <td>A var kilát a függvényből és meg tudja változtatni a globális változót, de új is definiálható. A let blokk szinten működik, ugyan úgy.</td>
                         </tr>
+                        <tr>
+                            <td>Array.isArray(x)</td>
+                            <td>Megmondja x változóról, hogy tömb elem-e.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].push(x)</td>
+                            <td>x értékét hozzáadja a [***] tömb végére.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].pop(x)</td>
+                            <td>x értékét eltávolítja a [***] tömb végéről.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].unshift(x)</td>
+                            <td>x értékét hozzáadja a [***] tömb elejére. Lassú, mert át kell sorszámozni az egész tömböt.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].shift(x)</td>
+                            <td>x értékét eltávolítja a [***] tömb elejéről. Lassú.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].slice(0, 1)</td>
+                            <td>Honnan meddig vágja a tömböt. Az eredeti tömböt nem módosítja.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].splice(0, 1, "x")</td>
+                            <td>Az eredeti tömböt módosítja. Az első paraméter a keződ index. A második 0 esetén nem töröl hanem beszúr. 1 esetén töröl. Ha van 3. paraméter, akkor (x) értékét beszúrja a megadott helyre. </td>
+                        </tr>
+                        <tr>
+                            <td>[***].join("x")</td>
+                            <td>A tömb kiírása string-be, a megadott x karaktereket elválasztásra használva. </td>
+                        </tr>
+                        <tr>
+                            <td>Érték szerinti átadás</td>
+                            <td>Egyszerű változók függvénynek történő átadáskor csak a változó másolata jön létre, az eredeti változó nem módosul.</td>
+                        </tr>
+                        <tr>
+                            <td>Referencia szerinti átadás</td>
+                            <td>Obejktumok  függvénynek történő átadáskor az eredetire mutató tömbre hivatkozunk, így a közben végrehajtott módosítás magán az eredeti objektumon hajtódik végre.</td>
+                        </tr>
+                        <tr>
+                            <td>For (let i=0; i<5; i++ )</td>
+                            <td>FOR előtesztelő ciklus. Az i=0. Fusson addig a ciklus, amíg a második paraméter igaz. A harmadik rész megnöveli minden lefutáskor az i értékét. Ezzel le fog futni 5 kör (i=0 –> i=4)</td>
+                        </tr>
+                        <tr>
+                            <td>contunie | break</td>
+                            <td>A continue megállítja a kód futását és visszatér az egyel feljebb lévő ciklus vagy kódsor futtatásához. A break az egész kódot megállítja.</td>
+                        </tr>
+                        <tr>
+                            <td>Összetett operátorok</td>
+                            <td>[***]+= "x" –> *** változó értékét növeli x-el. Példák: /= | -= | *= | % </td>
+                        </tr>
+                        <tr>
+                            <td>Ternary operátor 1.</td>
+                            <td>"canVote = age < 18 ? false : true" –> ha az egyenlőség utáni feltétel igaz, akkor megkapja a kérdőjel utáni értéket a változó, ha nem igaz, akkor a kettőspont utánit. <br>Még rövidebb verzió: "canVote = age > 18;" <br> Még egy példa többszörös vizsgálat esetére: "canVote = (age >= 18 && city == "Pécs");"</td>
+                        </tr>
+                        <tr>
+                            <td>Objektum létrehozása</td>
+                            <td>let admin = new Object(); vagy let customer = {}; Kulcs értékpárokat tartalmazó tömb.</td>
+                        </tr>
+                        <tr>
+                            <td>Objektumban lévő elemre hivatkozás</td>
+                            <td>user.name –> "Kiss Ramóna"</td>
+                        </tr>
+                        <tr>
+                            <td>Objektum kulcsok | értékek | minden lekérése</td>
+                            <td>Object.keys(user) | Object.values(user) Object.entries(user)</td>
+                        </tr>
+                        <tr>
+                            <td>Objektum elemeinek száma</td>
+                            <td>Objects.keys(user).lenght</td>
+                        </tr>
+                        <tr>
+                            <td>for of ciklus</td>
+                            <td>Végigmegy az iterálható tömbön és megadja sorban az értékeket.<br>for (let car of cars){console.log(car);}<br>String válozó esetén végig tud menni a karaktereken egyesével.<br>for (let val Objects.value(user))</td>
+                        </tr>
+                        <tr>
+                            <td>for in ciklus</td>
+                            <td>Végigmegy az iterálható tömbön és megadja sorban a kulcsokat.</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -155,7 +235,7 @@
         </div>
     </div>
 
-<script src="./js/main.js"></script>
+<!--<script src="./js/main.js"></script>-->
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
