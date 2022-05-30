@@ -31,3 +31,20 @@ let numberOfProducts;
 // Ne legyen félrevezető
 
 // Kerüljük az O és I betűket
+
+let user = {
+	id: "jsdlkfjskjklf",
+	index: 0,
+	isActive: true,
+	balance: "1000000",
+	image: "https://picsum.photos/50",
+    minusBalance: function(amount) {
+        this.balance -= (amount);
+    },
+    plusBalance: function(amount) {
+        this.balance += (amount);
+    },
+    getBalance: function() {
+        return (new Intl.NumberFormat(`hu-HU`, {style: `currency`, currency: `HUF`}).format(this.balance)); 
+    },
+}

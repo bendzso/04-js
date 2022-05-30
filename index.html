@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
     <title>Szótár</title>
 </head>
 <body>
@@ -231,6 +232,32 @@
                         <tr>
                             <td>this</td>
                             <td>Hivatkozás a jelenlegi objektumra.</td>
+                        </tr>
+                        <tr>
+                            <td>Arrow function</td>
+                            <td>Példa: let adder2 = (n1, n2) => n1+n2; –> A nyíl után 1 soros kód esetén nem kell kapcsos zárójel. Alapból a művelet return értékkel tér vissza.<br>Egy paraméter esetén nem kell zárójel sem. –><span class="code">let greeter = name => `Hello ${name}!`</span></td>
+                        </tr>
+                        <tr>
+                            <td>getElementById</td>
+                            <td>DOM elem kiválasztása ID alapján.</td>
+                        </tr>
+                        <tr>
+                            <td>getElementsByName</td>
+                            <td>Név alapján történik az elemeK kiválasztása. A kapott érték tömb. –> <span class="code">getElementsByName("amount-input")[0]</td>
+                        </tr>
+                        <tr>
+                            <td>querySelector és querySelectorAll</td>
+                            <td>CSS osztályként lehet kiválsztani elemeket az oldalon. Előbb az első elemet, utóbbi az összeset találja meg. Az ALL végű objektumként adja a választ.</td>
+                        </tr>
+                        <tr>
+                            <td>Element.prototype</td>
+                            <td>Új metódus hozható létre, amely épp úgy hozzárendelhető más elemekhez, mint a beépített metódusok. –><span class="code"> "Element.prototype.setUrgent = function() {
+                                this.style.border = "solid 2px red";
+                                }"</span></td>
+                        </tr>
+                        <tr>
+                            <td>[***].getAttribute</td>
+                            <td>Lekérdezi a HTML elem adott paraméterét. <span class="code">topInput.getAttribute("class");</span></td>
                         </tr>
                     </tbody>
                 </table>
