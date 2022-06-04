@@ -231,22 +231,22 @@
                         </tr>
                         <tr>
                             <td>this</td>
-                            <td>Hivatkozás a jelenlegi objektumra.</td>
+                            <td>Hivatkozás a jelenlegi objektumra.<br><span class="code">`Helló ${this.name}!`</span></td>
                         </tr>
                         <tr>
                             <td>Arrow function</td>
                             <td>Példa: let adder2 = (n1, n2) => n1+n2; –> A nyíl után 1 soros kód esetén nem kell kapcsos zárójel. Alapból a művelet return értékkel tér vissza.<br>Egy paraméter esetén nem kell zárójel sem. –><span class="code">let greeter = name => `Hello ${name}!`</span></td>
                         </tr>
                         <tr>
-                            <td>getElementById</td>
+                            <td>[***].getElementById</td>
                             <td>DOM elem kiválasztása ID alapján.</td>
                         </tr>
                         <tr>
-                            <td>getElementsByName</td>
+                            <td>[***].getElementsByName</td>
                             <td>Név alapján történik az elemeK kiválasztása. A kapott érték tömb. –> <span class="code">getElementsByName("amount-input")[0]</td>
                         </tr>
                         <tr>
-                            <td>querySelector és querySelectorAll</td>
+                            <td>[***].querySelector és querySelectorAll</td>
                             <td>CSS osztályként lehet kiválsztani elemeket az oldalon. Előbb az első elemet, utóbbi az összeset találja meg. Az ALL végű objektumként adja a választ.</td>
                         </tr>
                         <tr>
@@ -259,6 +259,61 @@
                             <td>[***].getAttribute</td>
                             <td>Lekérdezi a HTML elem adott paraméterét. <span class="code">topInput.getAttribute("class");</span></td>
                         </tr>
+                        <tr>
+                            <td>[***].Attributes</td>
+                            <td>Lekéri az ÖSSZES tulajdonságát egy HTML elemnek.</td>
+                        </tr>
+                        <tr>
+                            <td>[***].setAttribute</td>
+                            <td>Megváltoztatja a megadott paramétert ("mit", "mire"). <br> <span class="code">topInput.setAttribute("type", "email");</span></td>
+                        </tr>
+                        <tr>
+                            <td>[***].childElementCount</td>
+                            <td>Megadja az adott HTML elem gyerek elemeinek számát.</td>
+                        </tr>
+                        <tr>
+                            <td>elements <-> nodes</td>
+                            <td>Az Element olyan HTML elem, ami kapott element paramétert, azaz van típusa. A Node pedig minden elem, a típusos (pl. <div>) vagy típus nélküli szöveg az oldalon.</td>
+                        </tr>
+                        <tr>
+                            <td>appendChild</td>
+                            <td>Beszúr egy elemet az adott HTML element gyerek elemei közé.</td>
+                        </tr>
+                        <tr>
+                            <td>addEventListener</td>
+                            <td>Hozzáadunk plusz eseményt egy funkcióhoz (pl. click).</td>
+                        </tr>
+                        <tr>
+                            <td>preventDefault()</td>
+                            <td>Megakadályozza, hogy egy űrlapi küldés gomb újratöltse az oldalt, vagy egy linkre kattintva elhagyjuk az oldalt.</td>
+                        </tr>
+                        <tr>
+                            <td>Dátum, idő alapok</td>
+                            <td>A Date() függvényben a hónapok 0. indexel kezdődnek, tehát az 5. indexú hónap a június. A nap index 0-val kezdődik és vasárnap az első nap. Így az 5. indexű nap a péntek.</td>
+                        </tr>
+                        <tr>
+                            <td>switch elágazás</td>
+                            <td>Figyel egy meghatározott változót, és annak jövőbeli értékéhez tudunk elágazásokat rendelni.<br><span class="code">switch(x) {<br>
+                                case 0: {};<br>
+                                break;<br>
+                                case 1: {};<br>
+                                break;<br>
+                                default: {alapértelmezett érték};
+                            }<br>
+                            </span></td>
+                        </tr>
+                        <tr>
+                            <td>while ciklus</td>
+                            <td>Figyel egy meghatározott változót, és annak jövőbeli értékéhez tudunk elágazásokat rendelni.<br><span class="code">switch(x) {<br>
+                                case 0: {};<br>
+                                break;<br>
+                                case 1: {};<br>
+                                break;<br>
+                                default: {alapértelmezett érték};
+                            }<br>
+                            </span></td>
+                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
